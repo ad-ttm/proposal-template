@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>EHCP help from someone who's been there | The SEND Consultancy Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0d3f47;      /* her deep teal */
+    --teal: #3e8987;
+    --mint: #9ecac8;
+    --gold: #d2a24d;
+    --paper: #f3efe8;    /* her warm off-white */
+    --white: #ffffff;
+    --body: #2b3a3d;
+    --muted: #5f7175;
+    --rule: #e3ddd3;
+    --night: #082d33;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Mulish", -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--body);
+    background: var(--paper);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, p { margin: 0; }
+  .serif { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 22px; }
+  .wide { max-width: 1040px; margin: 0 auto; padding: 0 22px; }
+  a { color: inherit; }
+  img { display: block; max-width: 100%; }
+
+  /* nav */
+  .nav { background: var(--white); }
+  .nav .wide { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .nav img { height: 44px; width: auto; }
+  .nav .phone { color: var(--ink); font-size: 14px; font-weight: 600; letter-spacing: 0.02em; }
+
+  /* hero: night, centred VSL-funnel stack */
+  .hero { background: var(--night); color: #eef3f2; padding: 44px 0 56px; position: relative; overflow: hidden; text-align: center; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 50% at 50% 0%, rgba(62,137,135,0.35), transparent 70%); pointer-events: none; }
+  .hero .wide { position: relative; max-width: 900px; }
+  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--mint); margin-bottom: 18px; }
+  .hero h1 { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #fff; margin: 0 auto 14px; max-width: 22ch; }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero .sub { font-size: 17px; line-height: 1.6; color: #c9d8d7; max-width: 52ch; margin: 0 auto 26px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; font-size: 16px; padding: 16px 26px; border-radius: 10px; text-decoration: none; }
+  .btn.gold { background: var(--gold); color: #1e1608; }
+  .btn.ghost { background: transparent; color: #eef3f2; border: 1.5px solid rgba(255,255,255,0.35); }
+  .btns { display: flex; flex-direction: column; gap: 12px; align-items: stretch; }
+  .hero .trust { margin-top: 22px; font-size: 13px; color: #9fb5b3; line-height: 1.6; }
+  .hero .trust b { color: #fff; font-weight: 600; }
+  .stars { color: var(--gold); letter-spacing: 0.08em; }
+
+  .vsl { position: relative; border-radius: 16px; overflow: hidden; background: #000; aspect-ratio: 4 / 5; margin: 0 auto 26px; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.7); text-align: left; }
+  .vsl img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; filter: blur(28px) brightness(0.55); transform: scale(1.15); }
+  .vsl img.fg { position: relative; z-index: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; opacity: 0.95; }
+  .vsl::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(8,45,51,0) 45%, rgba(8,45,51,0.95) 100%); }
+  .vsl .play { position: absolute; left: 50%; top: 50%; width: 76px; height: 76px; margin: -38px 0 0 -38px; border-radius: 50%; background: var(--gold); z-index: 2; box-shadow: 0 0 0 12px rgba(210,162,77,0.22); }
+  .vsl .play::after { content: ""; position: absolute; left: 50%; top: 50%; margin: -13px 0 0 -8px; border-left: 24px solid #1e1608; border-top: 13px solid transparent; border-bottom: 13px solid transparent; }
+  .vsl .cap { position: absolute; left: 20px; right: 20px; bottom: 18px; z-index: 2; color: #fff; }
+  .vsl .cap b { display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 20px; line-height: 1.25; margin-bottom: 4px; }
+  .vsl .cap span { font-size: 13px; color: var(--mint); }
+  .vsl .dur { position: absolute; right: 14px; top: 14px; z-index: 2; font-size: 12px; font-weight: 600; color: #fff; background: rgba(0,0,0,0.45); padding: 4px 8px; border-radius: 6px; }
+
+  /* sections */
+  section { padding: 64px 0; }
+  .label { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
+  h2 { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 28px; line-height: 1.15; color: var(--ink); margin-bottom: 20px; letter-spacing: -0.02em; }
+  h2 em { font-style: normal; color: var(--teal); }
+  p + p { margin-top: 16px; }
+  .lead { font-size: 19px; line-height: 1.55; color: var(--ink); }
+
+  /* three camps */
+  .camps { list-style: none; margin: 28px 0 0; padding: 0; }
+  .camps li { padding: 22px 0; border-top: 1px solid var(--rule); }
+  .camps li:last-child { border-bottom: 1px solid var(--rule); }
+  .camps q { display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 19px; line-height: 1.35; color: var(--ink); quotes: "\201C" "\201D"; margin-bottom: 10px; }
+  .camps p { font-size: 16px; color: var(--muted); }
+  .then { margin-top: 26px; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 20px; line-height: 1.35; color: var(--ink); }
+
+  /* laura */
+  .laura { background: var(--white); }
+  .laura .wide { display: grid; grid-template-columns: 1fr; gap: 30px; align-items: center; }
+  .laura .photo { border-radius: 16px; overflow: hidden; aspect-ratio: 4 / 5; max-width: 420px; }
+  .laura .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+  .laura .sig { margin-top: 22px; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 700; font-size: 20px; color: var(--ink); }
+  .laura .sig small { display: block; font-family: "Mulish", sans-serif; font-weight: 400; font-style: normal; font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  /* reviews */
+  .reviews { background: var(--ink); color: #eef3f2; }
+  .reviews h2 { color: #fff; }
+  .reviews .label { color: var(--mint); }
+  .rlist { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 28px; }
+  .rev { padding: 22px 22px 18px; border-radius: 14px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); }
+  .rev q { display: block; font-family: "Mulish", sans-serif; font-weight: 600; font-size: 17px; line-height: 1.45; quotes: "\201C" "\201D"; margin: 8px 0 12px; }
+  .rev .who { font-size: 13px; color: #b7c9c8; }
+  .rev .who b { color: #fff; font-weight: 600; }
+  .gbadge { display: inline-flex; align-items: center; gap: 10px; margin-top: 26px; font-size: 14px; color: #b7c9c8; }
+  .gbadge b { color: #fff; }
+
+  /* team */
+  .team .wide { }
+  .people { list-style: none; margin: 30px 0 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 0; }
+  .people li { display: grid; grid-template-columns: 72px 1fr; gap: 18px; align-items: center; padding: 18px 0; border-top: 1px solid var(--rule); }
+  .people li:last-child { border-bottom: 1px solid var(--rule); }
+  .people .pic { width: 72px; height: 72px; border-radius: 50%; overflow: hidden; background: var(--mint); }
+  .people .pic img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+  .people b { display: block; font-size: 17px; color: var(--ink); font-weight: 700; }
+  .people .role { font-size: 13px; color: var(--teal); font-weight: 600; margin-bottom: 4px; }
+  .people p { font-size: 15px; line-height: 1.45; color: var(--muted); }
+  .people em { font-style: normal; color: var(--gold); font-weight: 600; }
+
+  /* ways */
+  .ways { background: var(--white); }
+  .ladder { list-style: none; margin: 30px 0 0; padding: 0; display: grid; gap: 14px; }
+  .ladder li { padding: 22px; border-radius: 14px; border: 1px solid var(--rule); background: var(--paper); }
+  .ladder li.top { background: var(--ink); color: #eef3f2; border-color: var(--ink); }
+  .ladder .n { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+  .ladder li.top .n { color: var(--gold); }
+  .ladder b { display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 22px; color: var(--ink); margin-bottom: 8px; }
+  .ladder li.top b { color: #fff; }
+  .ladder p { font-size: 15.5px; line-height: 1.5; color: var(--muted); }
+  .ladder li.top p { color: #c9d8d7; }
+  .compare { margin-top: 26px; padding: 18px 20px; border-left: 3px solid var(--gold); font-size: 16px; color: var(--ink); }
+
+  /* deadlines */
+  .dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
+  .dl div { padding: 16px 0 0; border-top: 2px solid var(--teal); }
+  .dl b { display: block; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 34px; line-height: 1; color: var(--ink); }
+  .dl small { display: block; font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.4; }
+
+  /* close */
+  .close { background: var(--night); color: #eef3f2; padding: 72px 0; }
+  .close h2 { color: #fff; font-size: 34px; }
+  .close p { color: #c9d8d7; max-width: 46ch; }
+  .close .btns { margin-top: 28px; }
+
+  footer { background: var(--night); color: #7f9997; font-size: 13px; padding: 20px 0 40px; border-top: 1px solid rgba(255,255,255,0.08); }
+  footer .wide { display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; }
+
+  @media (min-width: 820px) {
+    .hero { padding: 64px 0 72px; }
+    .hero h1 { font-size: 46px; }
+    .hero .sub { font-size: 19px; }
+    .btns { flex-direction: row; justify-content: center; align-items: center; }
+    .btns .btn { white-space: nowrap; }
+    .vsl { aspect-ratio: 16 / 9; max-width: 860px; }
+    .vsl img.fg { width: auto; max-width: 62%; margin: 0 auto; object-fit: contain; }
+    .vsl .play { width: 96px; height: 96px; margin: -48px 0 0 -48px; }
+    .vsl .cap b { font-size: 26px; }
+    section { padding: 88px 0; }
+    h2 { font-size: 36px; }
+    .laura .wide { grid-template-columns: 0.8fr 1.2fr; gap: 56px; }
+    .rlist { grid-template-columns: 1fr 1fr 1fr; }
+    .people { grid-template-columns: 1fr 1fr; column-gap: 40px; }
+    .people li:nth-child(2) { border-top: 1px solid var(--rule); }
+    .people li:nth-last-child(2) { border-bottom: 1px solid var(--rule); }
+    .ladder { grid-template-columns: 1fr 1fr 1fr; align-items: stretch; }
+    .close h2 { font-size: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="wide">
+    <img src="img/logo.png" alt="The SEND Consultancy Group" />
+    <span class="phone">0333 772 3845</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wide">
+    <p class="eyebrow">For UK parents of children with SEND</p>
+    <h1>If your child is struggling at school and nobody seems to be listening, <em>you're in the right place.</em></h1>
+    <p class="sub">I'm Laura. I've got six children, and I've fought for an EHCP for my own. Watch this before you do anything else.</p>
+    <div class="vsl" aria-label="Video placeholder">
+      <img class="bg" src="img/laura-a.jpg" alt="" aria-hidden="true" />
+      <img class="fg" src="img/laura-a.jpg" alt="Laura Alam" />
+      <span class="dur">5 min</span>
+      <span class="play"></span>
+      <div class="cap"><b>"You're probably in one of three places right now."</b><span>Laura Alam, founder, mum of six</span></div>
+    </div>
+    <div class="btns">
+      <a class="btn gold" href="#">Book a call with us</a>
+      <a class="btn ghost" href="#">Not ready? Get the 7-point EHCP checklist</a>
+    </div>
+    <p class="trust"><span class="stars">★★★★★</span> <b>Five-star Google reviews</b> from parents across England. Multi-award winning. Insured, independent, ICO registered.</p>
+  </div>
+</header>
+
+<section class="reviews">
+  <div class="wide">
+    <p class="label">What parents say</p>
+    <h2>"She fought for our child as if it was her own."</h2>
+    <div class="rlist">
+      <div class="rev">
+        <span class="stars">★★★★★</span>
+        <q>Within 48 hours she had produced an amended document which clearly showed what needed changing and why.</q>
+        <p class="who"><b>Kayleigh Davies</b>, parent, Google review</p>
+      </div>
+      <div class="rev">
+        <span class="stars">★★★★★</span>
+        <q>Laura made me feel heard, supported, and safe during one of the hardest parts of the process.</q>
+        <p class="who"><b>Ioana C</b>, parent, Google review</p>
+      </div>
+      <div class="rev">
+        <span class="stars">★★★★★</span>
+        <q>She made a very complex process feel manageable and helped us understand exactly what mattered.</q>
+        <p class="who"><b>Ioana C</b>, parent, Google review</p>
+      </div>
+    </div>
+    <p class="gbadge"><span class="stars">★★★★★</span> Google reviews from families we've supported through EHCPs, appeals and tribunals</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label">Sound familiar?</p>
+    <h2>Most parents who call us are in one of <em>three places.</em></h2>
+    <ul class="camps">
+      <li>
+        <q>I know my child is struggling. I just don't know where to turn.</q>
+        <p>School says one thing, the local authority says another, and nobody has told you what you're actually entitled to.</p>
+      </li>
+      <li>
+        <q>I've read everything. I could quote the Code of Practice. I still can't see the next step.</q>
+        <p>You know the law better than some of the people you're dealing with. But you're too close to it to see clearly, and you're exhausted.</p>
+      </li>
+      <li>
+        <q>I work full time. The only time I get to deal with this is after 9pm.</q>
+        <p>Emails to school, reports, therapists, deadlines. It's become a second job, and it's one you never applied for.</p>
+      </li>
+    </ul>
+    <p class="then">Whichever one you are, we've sat exactly where you're sitting.</p>
+  </div>
+</section>
+
+<section class="laura">
+  <div class="wide">
+    <div class="photo"><img src="img/laura-a.jpg" alt="Laura Alam" /></div>
+    <div>
+      <p class="label">Why I do this</p>
+      <h2>I'm not going to tell you it's easy. I'm going to tell you <em>what to do next.</em></h2>
+      <p class="lead">I've got six children. One of them is non-speaking and needs a very high level of support. Two have autism and ADHD. I've been through the EHCP process as a parent, and I've felt what you're feeling at one in the morning with a refusal letter open on the kitchen table.</p>
+      <p>I'm also a registered nurse, trained to Advanced level in SEND law, and for the last seven years I've led cases for families across England. Most of my families come to me after they've been told no.</p>
+      <p>The EHCP process is a legal one. It has deadlines, sections and rules the local authority has to follow. Most parents don't know that, and the system is counting on it. We do know it. That's the difference.</p>
+      <p class="sig">Laura<small>Founder and lead advocate, The SEND Consultancy Group. Co-founder of Together for SEND, Kent's largest SEND event.</small></p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="team">
+  <div class="wide">
+    <p class="label">The people behind your case</p>
+    <h2>Teachers, SENCOs, a barrister and a nurse. <em>All SEND parents or trained in SEND law. Most are both.</em></h2>
+    <p class="lead">You won't be handed to a stranger. Whoever leads your case, this is the team behind them.</p>
+    <ul class="people">
+      <li>
+        <div class="pic"><img src="img/laura-a.jpg" alt="" /></div>
+        <div><b>Laura A</b><span class="role">Founder and lead advocate</span><p>Registered nurse. Advanced IPSEA SEND law. <em>Mum of six. SEND parent.</em></p></div>
+      </li>
+      <li>
+        <div class="pic"><img src="img/laura-w.jpg" alt="" /></div>
+        <div><b>Laura W</b><span class="role">Legal advocate</span><p>Called to the Bar in 2016. <em>Moved into SEND law after her daughter's autism diagnosis.</em></p></div>
+      </li>
+      <li>
+        <div class="pic"><img src="img/emily.jpg" alt="" /></div>
+        <div><b>Emily W</b><span class="role">SEND consultant and advocate</span><p>SENCO and former assistant headteacher. <em>Eight years in a specialist school.</em></p></div>
+      </li>
+      <li>
+        <div class="pic"><img src="img/laura-f.webp" alt="" /></div>
+        <div><b>Laura F</b><span class="role">SEND consultant and advocate</span><p>Taught for 20 years, deputy head and SENCO. <em>Left the classroom to do this.</em></p></div>
+      </li>
+      <li>
+        <div class="pic"><img src="img/kate.jpg" alt="" /></div>
+        <div><b>Kate M</b><span class="role">Advocate and business manager</span><p>Qualified teacher, psychology degree. <em>SEND parent. Co-founded Together for SEND.</em></p></div>
+      </li>
+      <li>
+        <div class="pic"><img src="img/beverley.jpg" alt="" /></div>
+        <div><b>Beverley S</b><span class="role">Benefits and welfare advisor</span><p>DLA, PIP and Blue Badge applications and appeals. <em>SEND parent.</em></p></div>
+      </li>
+      <li>
+        <div class="pic"><img src="img/johny.jpg" alt="" /></div>
+        <div><b>Johny A</b><span class="role">Managing director</span><p>Keeps the whole thing running. <em>SEND parent.</em></p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="ways">
+  <div class="wide">
+    <p class="label">How we work</p>
+    <h2>Three ways to work with us. <em>You choose how much you hand over.</em></h2>
+    <ol class="ladder">
+      <li>
+        <span class="n">Advice</span>
+        <b>Tell me what to do</b>
+        <p>A call with one of the team. We look at where you are, tell you exactly what to do next and what to say. You do it.</p>
+      </li>
+      <li>
+        <span class="n">Prepared</span>
+        <b>Write it for me</b>
+        <p>We draft the request, the response or the appeal, legally grounded and ready to send. You send it and we tell you what happens next.</p>
+      </li>
+      <li class="top">
+        <span class="n">Case led</span>
+        <b>Do it with me, start to finish</b>
+        <p>We lead the whole case. Every letter, every deadline, mediation, tribunal. You stay in control, we carry the weight.</p>
+      </li>
+    </ol>
+    <p class="compare">A solicitor charges around £20,000 to run an EHCP case. We do the same job, with the same legal grounding, for a fraction of that. We'll tell you exactly what on the call.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label">Know your deadlines</p>
+    <h2>The clock is <em>already running.</em></h2>
+    <p>The EHCP process is statutory. That means the local authority has legal deadlines, and so do you. Miss yours and you lose the right to challenge. Three of the ones that matter most:</p>
+    <div class="dl">
+      <div><b>20</b><small>weeks, the maximum legal time to issue an EHCP</small></div>
+      <div><b>15</b><small>days to comment on a draft plan</small></div>
+      <div><b>2</b><small>months to appeal to the SEND Tribunal after a final decision</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <h2>It's late. You've read this far. <em style="color:var(--gold)">Let's talk.</em></h2>
+    <p>Book a call and you'll come off it knowing exactly what to do next. If you're not ready for that yet, take the checklist and we'll be here when you are.</p>
+    <div class="btns">
+      <a class="btn gold" href="#">Book a call with us</a>
+      <a class="btn ghost" href="#">Get the 7-point EHCP checklist</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wide">
+    <span>The SEND Consultancy Group</span>
+    <span>Kent House, 81 Station Road, Ashford, Kent, TN23 1PP</span>
+    <span>0333 772 3845</span>
+    <span>Insured. Independent. ICO registered. DBS checked.</span>
+  </div>
+</footer>
+
+</body>
+</html>
