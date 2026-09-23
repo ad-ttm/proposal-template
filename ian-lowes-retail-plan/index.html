@@ -4,333 +4,209 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="robots" content="noindex, nofollow"/>
-<title>Ian Lowes - The Retail Plan - Test Tube Marketing</title>
+<title>Operation Retail - for Ian, from Ad &amp; Fish</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--pink:#E8185A;--teal:#4DD9D0;--white:#fff;--text:#2D2D2D;--muted:#6B7280;--light:#F5F6F8;--navy:#060F1C;}
-*{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{font-family:'Inter',system-ui,sans-serif;color:var(--text);background:#fff;overflow-x:hidden;}
-
-.cover{min-height:100vh;background:radial-gradient(ellipse at 65% 75%,#1A5C6B 0%,#0B2A45 45%,#060F1C 100%);color:white;padding:48px 56px;display:flex;flex-direction:column;justify-content:space-between;}
-.cover-date{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:16px;}
-.cover-logo{max-height:60px;width:auto;}
-.cover-h1{font-family:'Poppins',sans-serif;font-weight:900;font-size:clamp(52px,11vw,96px);line-height:.95;letter-spacing:-.03em;margin:56px 0 24px;}
-.cover-sub{font-size:clamp(15px,1.8vw,19px);color:var(--teal);line-height:1.6;max-width:560px;}
-.cover-sub em{font-style:italic;}
-.cover-credits{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:64px;}
-.credit-label{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:6px;}
-.credit-name{font-family:'Poppins',sans-serif;font-size:18px;font-weight:600;color:var(--teal);}
-
-.sec{min-height:100vh;padding:96px 56px;display:flex;flex-direction:column;justify-content:center;}
-.sec-alt{background:var(--light);}
-.sec-h{font-family:'Poppins',sans-serif;font-size:clamp(32px,5vw,54px);font-weight:800;color:var(--pink);line-height:1.05;letter-spacing:-.02em;margin-bottom:36px;}
-.body{max-width:720px;font-size:clamp(15px,1.4vw,17px);line-height:1.8;}
-.body p{margin-bottom:18px;}
-.body p:last-child{margin-bottom:0;}
-.body strong{font-weight:600;}
-.body em{font-style:italic;}
-.callout{background:white;border-left:3px solid var(--pink);padding:18px 24px;border-radius:0 8px 8px 0;margin:24px 0;font-style:italic;font-size:16px;line-height:1.65;max-width:700px;color:var(--text);}
-.sec-alt .callout{background:white;}
-.sec:not(.sec-alt) .callout{background:var(--light);}
-
-/* Investor quotes - big, stacked, like a transcript */
-.voices{max-width:760px;margin:8px 0 40px;display:flex;flex-direction:column;gap:6px;}
-.voice{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(26px,4.2vw,44px);line-height:1.15;letter-spacing:-.02em;color:var(--navy);}
-.voice:nth-child(4){color:var(--pink);}
-.voice-note{font-size:13px;color:var(--muted);margin-top:14px;}
-
-/* Barriers - numbered list, not cards */
-.barriers{list-style:none;max-width:720px;margin:8px 0 32px;border-top:1px solid #E5E7EB;}
-.barriers li{display:grid;grid-template-columns:56px 1fr;gap:8px;padding:22px 0;border-bottom:1px solid #E5E7EB;}
-.b-n{font-family:'Poppins',sans-serif;font-weight:800;font-size:28px;color:var(--pink);line-height:1.2;}
-.b-q{font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;line-height:1.3;margin-bottom:6px;}
-.b-d{font-size:15.5px;line-height:1.7;}
-
-/* Ladder */
-.rung{max-width:720px;margin-top:40px;padding-left:28px;border-left:3px solid var(--pink);}
-.rung:first-of-type{margin-top:12px;}
-.rung-tag{display:inline-block;background:var(--pink);color:white;font-size:11px;font-weight:600;padding:3px 10px;border-radius:99px;letter-spacing:.04em;margin-bottom:10px;}
-.rung-title{font-family:'Poppins',sans-serif;font-size:24px;font-weight:700;color:var(--text);margin-bottom:10px;line-height:1.25;}
-.rung .body p{margin-bottom:14px;}
-.rung-meta{margin-top:14px;font-size:14.5px;line-height:1.7;color:var(--text);}
-.rung-meta span{font-weight:600;color:var(--pink);}
-
-.dlist{list-style:none;display:flex;flex-direction:column;gap:13px;max-width:700px;margin-top:16px;}
-.dlist li{display:flex;align-items:flex-start;gap:10px;font-size:16px;line-height:1.65;}
-.dlist li::before{content:'*';color:var(--pink);font-weight:900;font-size:20px;line-height:1.3;flex-shrink:0;}
-
-.data-table{width:100%;max-width:720px;border-collapse:collapse;margin-top:24px;font-size:14.5px;}
-.data-table th{background:var(--pink);color:white;font-family:'Poppins',sans-serif;font-weight:600;padding:11px 14px;text-align:left;}
-.data-table td{padding:12px 14px;border-bottom:1px solid #E5E7EB;vertical-align:top;line-height:1.6;}
-.data-table tr:nth-child(even) td{background:#F9FAFB;}
-.sec-alt .data-table td{background:white;}
-.sec-alt .data-table tr:nth-child(even) td{background:#FBFBFC;}
-
-.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:960px;margin-top:8px;}
-.split h3{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;margin-bottom:6px;}
-
-.steps{list-style:none;display:flex;flex-direction:column;gap:18px;max-width:680px;margin-top:24px;}
-.steps li{display:flex;align-items:flex-start;gap:14px;font-size:16px;line-height:1.65;}
-.step-n{width:34px;height:34px;border-radius:50%;background:var(--pink);color:white;font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.sign-off{margin-top:52px;font-size:16px;line-height:1.9;}
-.sign-off .name{font-weight:700;font-size:17px;margin-top:12px;display:block;}
-.sign-off .details{font-style:italic;font-weight:400;display:block;font-size:15px;color:var(--muted);}
-
-.nav-dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:9px;z-index:100;}
-.dot{width:7px;height:7px;border-radius:50%;background:rgba(200,200,200,.5);cursor:pointer;border:none;padding:0;transition:all .2s;}
-.dot.active{background:var(--pink);transform:scale(1.5);}
-.footer{background:var(--navy);color:rgba(255,255,255,.4);text-align:center;padding:28px 24px;font-size:12px;line-height:1.8;}
-.footer a{color:rgba(255,255,255,.5);}
-
-.fi{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
-.fi.vis{opacity:1;transform:translateY(0);}
-@media(max-width:768px){
-  .cover{padding:32px 24px;}
-  .sec{padding:64px 24px;min-height:auto;}
-  .nav-dots{display:none;}
-  .split{grid-template-columns:1fr;gap:28px;}
-  .rung{padding-left:20px;}
-  .barriers li{grid-template-columns:40px 1fr;}
-  .data-table{font-size:13.5px;}
-  .data-table th,.data-table td{padding:10px;}
-  .data-table.stack thead{display:none;}
-  .data-table.stack,.data-table.stack tbody,.data-table.stack tr,.data-table.stack td{display:block;width:100%;}
-  .data-table.stack tr{border-top:3px solid var(--pink);padding:14px 0 6px;}
-  .data-table.stack tr td,.data-table.stack tr:nth-child(even) td{background:transparent;border:none;padding:4px 0 10px;}
-  .data-table.stack td.route{font-family:'Poppins',sans-serif;font-size:18px;padding-bottom:6px;}
-  .data-table.stack td[data-label]::before{content:attr(data-label);display:block;font-size:12px;font-weight:600;color:var(--pink);margin-bottom:2px;}
+:root{
+  --ink:#111114;
+  --pink:#E8185A;
+  --blush:#FDE8EF;
+  --bubble:#EFEFF2;
+  --muted:#6B6B72;
+  --line:#E6E6EA;
+  --paper:#FFFFFF;
 }
-@media(max-width:420px){
-  .cover-credits{grid-template-columns:1fr;gap:20px;margin-top:40px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.7;}
+a{color:var(--pink);}
+.wrap{max-width:660px;margin:0 auto;padding:0 20px;}
+
+/* Top */
+.strip{background:var(--ink);}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;}
+.top img{height:32px;width:auto;display:block;}
+.top .meta{font-size:13px;color:#B9B9C0;text-align:right;line-height:1.4;}
+
+.hero{padding:56px 0 8px;}
+.hero h1{font-weight:800;font-size:clamp(52px,13vw,96px);line-height:.92;letter-spacing:-.045em;}
+.hero h1 span{color:var(--pink);}
+.hero .intro{margin-top:28px;font-size:18px;}
+.hero .intro p+p{margin-top:14px;}
+
+/* Sections */
+section{padding:64px 0 8px;}
+h2{font-weight:700;font-size:clamp(26px,5.4vw,34px);line-height:1.15;letter-spacing:-.025em;margin-bottom:24px;}
+h2 em{font-style:normal;color:var(--pink);}
+p{margin-bottom:16px;}
+p:last-child{margin-bottom:0;}
+strong{font-weight:600;}
+
+/* Signature: the conversations */
+.chat{display:flex;flex-direction:column;gap:10px;margin:8px 0 28px;}
+.bubble{align-self:flex-start;max-width:88%;background:var(--bubble);border-radius:22px 22px 22px 6px;padding:14px 20px;font-weight:600;font-size:clamp(20px,4.6vw,26px);line-height:1.3;letter-spacing:-.01em;}
+.bubble.hot{background:var(--pink);color:#fff;}
+.chat-note{font-size:13px;color:var(--muted);margin-top:4px;}
+.js .bubble{opacity:0;transform:translateY(10px) scale(.98);transition:opacity .45s ease,transform .45s ease;}
+.js .chat.seen .bubble{opacity:1;transform:none;}
+.js .chat.seen .bubble:nth-child(2){transition-delay:.35s;}
+.js .chat.seen .bubble:nth-child(3){transition-delay:.7s;}
+.js .chat.seen .bubble:nth-child(4){transition-delay:1.15s;}
+@media (prefers-reduced-motion:reduce){.js .bubble{opacity:1;transform:none;transition:none;}}
+
+/* Notes list */
+.notes{list-style:none;}
+.notes li{position:relative;padding-left:26px;margin-bottom:16px;}
+.notes li::before{content:'';position:absolute;left:2px;top:.72em;width:10px;height:3px;background:var(--pink);border-radius:2px;}
+
+.pull{background:var(--blush);border-radius:16px;padding:20px 22px;margin:24px 0 0;font-size:18px;}
+.pull .said{font-weight:600;}
+
+/* Steps: a real sequence, so numbered */
+.steps{list-style:none;margin-top:8px;}
+.step{display:grid;grid-template-columns:48px 1fr;gap:4px 14px;padding:26px 0;border-top:1px solid var(--line);}
+.step:last-child{border-bottom:1px solid var(--line);}
+.step .n{font-weight:800;font-size:40px;line-height:1;color:var(--pink);letter-spacing:-.04em;}
+.step h3{font-weight:700;font-size:21px;line-height:1.3;letter-spacing:-.01em;margin-bottom:8px;}
+.step .know{margin-top:10px;font-size:15px;color:var(--muted);}
+.step .know b{color:var(--ink);font-weight:600;}
+
+h3.sub{font-weight:700;font-size:20px;margin:44px 0 16px;letter-spacing:-.01em;}
+.notes.traffic li b{display:block;font-weight:600;}
+.notes.traffic li span{display:block;font-size:15px;color:var(--muted);margin-top:2px;}
+
+.sign{padding:64px 0 72px;}
+.sign .names{font-weight:700;font-size:22px;margin-top:18px;}
+.sign .names span{color:var(--pink);}
+footer{border-top:1px solid var(--line);padding:22px 0 32px;font-size:12px;color:var(--muted);}
+
+@media (min-width:760px){
+  body{font-size:18px;}
+  .hero{padding-top:88px;}
+  section{padding-top:88px;}
+  .step{grid-template-columns:64px 1fr;}
+  .step .n{font-size:48px;}
 }
 </style>
 </head>
 <body>
-<nav class="nav-dots" id="navDots"></nav>
+<div class="strip"><div class="wrap">
+  <header class="top">
+    <img src="https://proposals.testtubemarketing.com/assets/ttm-logo.png" alt="Test Tube Marketing"/>
+    <div class="meta">For Ian, from Ad &amp; Fish<br/>23 September 2026</div>
+  </header>
+</div></div>
+<div class="wrap">
 
-<!-- COVER -->
-<section class="cover" id="s0" data-label="Cover">
-  <div>
-    <div class="cover-date">September 2026</div>
-    <img class="cover-logo" src="https://proposals.testtubemarketing.com/assets/ttm-logo.png" alt="Test Tube Marketing" />
-  </div>
-  <div>
-    <h1 class="cover-h1">The Retail<br/>Plan</h1>
-    <p class="cover-sub">How we take the 10:10 Plan from <em>"never heard of it"</em> to <em>"I get it, I'm in."</em></p>
-  </div>
-  <div class="cover-credits">
-    <div><div class="credit-label">Prepared for:</div><div class="credit-name">Ian Lowes / Autocalls.com</div></div>
-    <div><div class="credit-label">Prepared by:</div><div class="credit-name">Ad &amp; Fish, Test Tube Marketing</div></div>
-  </div>
-</section>
-
-<!-- WHERE WE ARE -->
-<section class="sec" id="s1" data-label="Where We Are">
-  <div class="fi">
-    <h2 class="sec-h">Where we are.</h2>
-    <div class="body">
-      <p>Ian,</p>
-      <p>Thanks for Thursday. It was the most useful conversation we've had since we started, and it changed the brief.</p>
-      <p>Here's what we heard.</p>
-      <p><strong>The adviser route is closed.</strong> 22 leads from 3,800 mailers, and no registrations. You put it better than we could: take an adviser a golden goose and they'll find a reason not to use it. They're set up around their fee model, and the 10:10 Plan doesn't fit it.</p>
-      <p><strong>Retail is now open.</strong> IDAD has its retail permissions, so Autocalls can trade under them while the Appointed Representative status works its way through the regulator.</p>
-      <p><strong>The proposition is simpler than it's ever been.</strong> Autocalls Limited, trading as Autocalls.com. A minimum of around £1,000. Current issues running for two years.</p>
-      <p><strong>Traffic comes first.</strong> Visitors let you bring more products onto the platform, and more products bring the revenue. Without the traffic, every new product is a half-million-pound bet.</p>
-      <p>And you asked us for something specific:</p>
-    </div>
-    <div class="callout">"I need some concept or some proposition that's worth testing, that you can then deliver on."</div>
-    <div class="body"><p>This is it.</p></div>
-  </div>
-</section>
-
-<!-- WHAT INVESTORS TOLD US -->
-<section class="sec sec-alt" id="s2" data-label="What Investors Told Us">
-  <div class="fi">
-    <h2 class="sec-h">What investors told us.</h2>
-    <div class="body">
-      <p>After the call, Ad took the 10:10 Plan to friends of his who already invest, and asked what they made of it.</p>
-      <p>This is what came back:</p>
-    </div>
-    <div class="voices">
-      <div class="voice">"I don't get it."</div>
-      <div class="voice">"Never heard of it."</div>
-      <div class="voice">"Explain it to me in simple terms."</div>
-      <div class="voice">"Why has my FA never shown me this if it's good?"</div>
-      <div class="voice-note">Informal conversations with people who invest, September 2026. More are under way.</div>
-    </div>
-    <div class="body">
-      <p>On Thursday you told us you didn't think we'd "got it" yet, because we'd have put a grand in by now. That was a fair challenge.</p>
-      <p>The people you need to reach haven't got it either. None of them got far enough to weigh up whether to invest. They stopped at the first hurdle: what is this, and why has nobody told me about it?</p>
-      <p>So that's the real brief: explain it so simply that the first hurdle disappears.</p>
+  <div class="hero">
+    <h1>Operation Retail<span>.</span></h1>
+    <div class="intro">
+      <p>Ian, after Thursday we went away and did two things. We spoke to some real investors, and we had a proper think.</p>
+      <p>Here's where we've got to. None of it is set in stone. It's here for us to pull apart together.</p>
     </div>
   </div>
-</section>
 
-<!-- THE THREE BARRIERS -->
-<section class="sec" id="s3" data-label="The Three Barriers">
-  <div class="fi">
-    <h2 class="sec-h">Three barriers, in order.</h2>
-    <div class="body"><p>Every would-be investor has to get past three questions before they'll put money in. They come in this order, and nobody reaches the second until they're past the first.</p></div>
-    <ol class="barriers">
-      <li><div class="b-n">1</div><div><div class="b-q">"I don't get it."</div><div class="b-d">Before anything else, they need to understand how it works and what they'd get back, in pounds rather than percentages. As you said, plenty of people who think of themselves as investors don't work in percentages.</div></div></li>
-      <li><div class="b-n">2</div><div><div class="b-q">"Why haven't I heard of this?"</div><div class="b-d">If it's that good, why hasn't their adviser mentioned it, and why isn't it on the platforms they use? Left unanswered, this turns into suspicion. Answered well, it's our strongest hook.</div></div></li>
-      <li><div class="b-n">3</div><div><div class="b-q">"Will I get my money back?"</div><div class="b-d">Nobody in our conversations got this far yet, but they will. With a two-year wait before the first result, trust matters more than risk. As you put it, anyone can type Goldman Sachs on a page. They need to see who holds their money, who regulates it, and what paperwork they'll receive.</div></div></li>
-    </ol>
-    <div class="body"><p><strong>Everything below is built to answer these three questions, in that order.</strong></p></div>
-  </div>
-</section>
-
-<!-- THE LADDER -->
-<section class="sec sec-alt" id="s4" data-label="The Ladder">
-  <div class="fi">
-    <h2 class="sec-h">The ladder.</h2>
-    <div class="body">
-      <p>You've always been a test marketer, so we'd build this in steps. Each one is cheaper than the next, and each one proves something before we spend more. We only climb to the next rung once the one below it is working.</p>
+  <section>
+    <h2>Here's what the people we've spoken to so far said when being shown the 10:10 Plan<em>.</em></h2>
+    <div class="chat" id="chat">
+      <div class="bubble">I don't get it.</div>
+      <div class="bubble">Never heard of it.</div>
+      <div class="bubble">Explain it to me in simple terms.</div>
+      <div class="bubble hot">Why has my FA never shown me this if it's good?</div>
     </div>
+    <p class="chat-note">Friends of Ad's who already invest. More conversations are on the way.</p>
+    <p style="margin-top:24px;">None of them got past "what is this?" They never got as far as deciding whether to put money in.</p>
+    <p>On Thursday you said we hadn't "got it" yet. Fair enough. It turns out the people we need to reach haven't either. So that's job one: make it simple enough that they do.</p>
+    <p>And that last question is the best thing anyone's said so far. If we can answer "why has nobody told me about this?", we've got our hook.</p>
+  </section>
 
-    <div class="rung">
-      <div class="rung-tag">Rung 1</div>
-      <div class="rung-title">The simple explanation</div>
-      <div class="body">
-        <p>One plain-English description of how the 10:10 Plan works, short enough to say over a coffee. No jargon, no percentages without the pounds next to them, and a straight answer to "why haven't I heard of this?"</p>
-        <p>We test it on real investors (the same people who told us "I don't get it") until they can explain it back to us. Everything else is built from it, and IDAD only has to clear the core message once.</p>
-      </div>
-      <div class="rung-meta"><span>Answers:</span> barrier 1. <span>Proves:</span> people can understand it without you in the room.</div>
-    </div>
+  <section>
+    <h2>Here's what we discussed<em>.</em></h2>
+    <ul class="notes">
+      <li><strong>The adviser route's done.</strong> 22 leads from 3,800 mailers, and no registrations. Advisers will find a reason not to use it, because it doesn't fit how they earn.</li>
+      <li><strong>Retail's open.</strong> IDAD has its retail permissions, so Autocalls can trade under them while the AR status is stuck with the regulator.</li>
+      <li><strong>New name, lower way in.</strong> Autocalls Limited, trading as Autocalls.com. From around £1,000, with current issues running two years.</li>
+      <li><strong>Traffic first.</strong> More visitors means you can bring more products on, and more products means revenue.</li>
+      <li><strong>The big objections.</strong> "Why haven't I heard of this?" And with a two-year wait, "will I actually get my money back?"</li>
+      <li><strong>Angles we kicked around.</strong> Something the wealthy and IFAs have used for 20 years, now open to everyone. You as the person who's fought to get it out there. The UK finally catching up with France and Germany, where this is normal.</li>
+      <li><strong>Ideas on the table.</strong> Fish's long-form video presentation, and Ad's "maturity anniversaries": if you'd invested on this day three years ago, here's what you'd have got back.</li>
+    </ul>
+    <div class="pull">You asked us for <span class="said">"some concept or some proposition that's worth testing."</span> So here it is.</div>
+  </section>
 
-    <div class="rung">
-      <div class="rung-tag">Rung 2</div>
-      <div class="rung-title">The written sales letter</div>
-      <div class="body">
-        <p>A long-form page that tells the whole story in writing. It opens with the question our investors asked: <em>why has my adviser never mentioned this?</em> Then it moves through how it works, the track record, and why the UK is only now catching up with France and Germany, where products like this are the norm.</p>
-        <p>Writing it first is deliberate. It's quick to produce, cheap to change, and IDAD can mark it up line by line. It's where we find out which angle lands before anyone goes near a camera.</p>
-      </div>
-      <div class="rung-meta"><span>Answers:</span> barriers 1 and 2. <span>Proves:</span> which story makes people want to register.</div>
-    </div>
+  <section>
+    <h2>Here's what we think would be worth thinking about<em>.</em></h2>
+    <p>We'd do this in steps, cheapest first, and only move on when the one before is working. You've always been a tester, so this should feel familiar.</p>
 
-    <div class="rung">
-      <div class="rung-tag">Rung 3</div>
-      <div class="rung-title">The guide and email course</div>
-      <div class="body">
-        <p>A free guide to swap for an email address, followed by a short email course that explains the 10:10 Plan a step at a time. This is how we build the retail list Autocalls doesn't have yet.</p>
-        <p>After the course, the list gets the <strong>maturity anniversaries</strong>: regular emails and posts showing what a past issue returned when it matured, "if you'd invested on this day three years ago..." They're real results, told on real dates, and the same content works on social.</p>
-      </div>
-      <div class="rung-meta"><span>Answers:</span> barriers 1, 2 and 3, through repetition. <span>Proves:</span> we can build and warm an audience you own.</div>
-    </div>
-
-    <div class="rung">
-      <div class="rung-tag">Rung 4</div>
-      <div class="rung-title">The video presentation</div>
-      <div class="body">
-        <p>You on camera, telling the story from the proven letter: your 20 years with these products, how they work, the track record, and a full section on trust (who holds the money, who regulates it, and exactly what investors receive).</p>
-        <p>It comes last on purpose. By then we'll know which message works, so you're filming something already proven, and won't need to reshoot.</p>
-      </div>
-      <div class="rung-meta"><span>Answers:</span> all three barriers, with your face and track record behind them. <span>Proves:</span> it can scale.</div>
-    </div>
-  </div>
-</section>
-
-<!-- TRAFFIC -->
-<section class="sec" id="s5" data-label="Getting People To It">
-  <div class="fi">
-    <h2 class="sec-h">Getting people to it.</h2>
-    <div class="body">
-      <p>The ladder only works if people reach it. There are four routes worth considering, and you're best placed to choose between them.</p>
-    </div>
-    <table class="data-table stack">
-      <thead><tr><th>Route</th><th>Why it's worth it</th><th>What to check first</th></tr></thead>
-      <tbody>
-        <tr><td class="route"><strong>Past 10:10 investors</strong></td><td data-label="Why it's worth it">You mentioned investors who came in through other channels and lost sight of it. They already understand it, and they're the warmest audience there is.</td><td data-label="What to check first">What contact data exists, and whether we have permission to use it.</td></tr>
-        <tr><td class="route"><strong>Your own audience</strong></td><td data-label="Why it's worth it">Your LinkedIn, press contacts and existing site sign-ups. You're the credibility, and people can look you up.</td><td data-label="What to check first">Nothing. This can start alongside Rung 2.</td></tr>
-        <tr><td class="route"><strong>Meta lead ads</strong></td><td data-label="Why it's worth it">The quickest way to build the list from Rung 3, and the easiest to measure.</td><td data-label="What to check first">Meta now asks UK financial-services advertisers to prove FCA authorisation. Until the AR status lands, we'd expect this to run under IDAD's authorisation, which needs confirming with Emily.</td></tr>
-        <tr><td class="route"><strong>Press</strong></td><td data-label="Why it's worth it">You've got the history and the story: a product the UK has been slow to catch up on.</td><td data-label="What to check first">Which journalists you already know, and a news hook worth their time.</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- MEASURING -->
-<section class="sec sec-alt" id="s6" data-label="How We'll Know">
-  <div class="fi">
-    <h2 class="sec-h">How we'll know it's working.</h2>
-    <div class="body">
-      <p>You said on Thursday you want to get to the point where you can see either the roadblocks or the road that's open. That's what each rung is for.</p>
-    </div>
-    <table class="data-table">
-      <thead><tr><th>Rung</th><th>What we watch</th></tr></thead>
-      <tbody>
-        <tr><td>1. Simple explanation</td><td>Can investors explain it back to us after hearing it once?</td></tr>
-        <tr><td>2. Sales letter</td><td>How far people read, and how many click through to register.</td></tr>
-        <tr><td>3. Guide and email course</td><td>Sign-up rate on the guide, opens and clicks on the emails, and registrations from the list.</td></tr>
-        <tr><td>4. Video</td><td>How much of it people watch, and how many go on to register and invest.</td></tr>
-      </tbody>
-    </table>
-    <div class="body" style="margin-top:20px;"><p>We'll set the targets for each rung with you once the traffic routes are chosen, because what "good" looks like depends on where the people come from.</p></div>
-  </div>
-</section>
-
-<!-- WHO DOES WHAT -->
-<section class="sec" id="s7" data-label="Who Does What">
-  <div class="fi">
-    <h2 class="sec-h">Who does what.</h2>
-    <div class="split">
-      <div>
-        <h3>We'll do</h3>
-        <ul class="dlist">
-          <li>Keep testing the message on real investors</li>
-          <li>Write the simple explanation, the sales letter, the guide and the emails</li>
-          <li>Build the pages and set up the email course</li>
-          <li>Script the video and brief you on recording it</li>
-          <li>Report back on what the numbers are telling us</li>
-        </ul>
-      </div>
-      <div>
-        <h3>We'll need from you</h3>
-        <ul class="dlist">
-          <li>Your pick of the traffic routes</li>
-          <li>Past issue results and maturity dates, for the anniversaries</li>
-          <li>A compliance route with IDAD, and a realistic turnaround time</li>
-          <li>Confirmation on how paid ads would run under IDAD's authorisation</li>
-          <li>Your time on camera when we reach Rung 4</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- NEXT STEPS -->
-<section class="sec sec-alt" id="s8" data-label="Next Steps">
-  <div class="fi">
-    <h2 class="sec-h">Next steps.</h2>
     <ol class="steps">
-      <li><div class="step-n">1</div><span>Have a read, and tell us what doesn't land. You know this product better than anyone, so we'd rather hear it now.</span></li>
-      <li><div class="step-n">2</div><span>A short call to agree the ladder and pick the traffic routes.</span></li>
-      <li><div class="step-n">3</div><span>We start on Rung 1 straight away, and bring the simple explanation back to you and IDAD.</span></li>
+      <li class="step">
+        <div class="n">1</div>
+        <div>
+          <h3>Nail the simple explanation</h3>
+          <p>One plain-English version of how the 10:10 Plan works. Short enough to say over a coffee, pounds not percentages, and a straight answer to "why haven't I heard of this?" We test it on the same people who said "I don't get it" until it clicks. IDAD only has to clear the core message once, and everything else gets built from it.</p>
+          <p class="know"><b>How we'll know:</b> people can explain it back to us.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="n">2</div>
+        <div>
+          <h3>Write it up as a sales letter</h3>
+          <p>A long-form page that opens with "why has my adviser never mentioned this?" and walks through how it works, the track record, and why the UK is only now catching up. Writing comes before video because it's quick, cheap to change, and IDAD can mark it up line by line.</p>
+          <p class="know"><b>How we'll know:</b> how far people read, and how many register.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="n">3</div>
+        <div>
+          <h3>Give away a guide, then teach by email</h3>
+          <p>A free guide in exchange for an email address, then a short email course that explains it a bit at a time. That builds the retail list Autocalls doesn't have yet. After that, the list gets the maturity anniversaries: real results, on real dates, and they work on social too.</p>
+          <p class="know"><b>How we'll know:</b> sign-ups, opens and clicks, and registrations from the list.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="n">4</div>
+        <div>
+          <h3>Then film it</h3>
+          <p>You on camera, telling the version we already know works: your 20 years with these products, how they work, and a proper section on trust (who holds the money, who regulates it, and what paperwork people get). By then you're filming something proven, so no reshoots.</p>
+          <p class="know"><b>How we'll know:</b> how much people watch, and how many go on to invest.</p>
+        </div>
+      </li>
     </ol>
-    <div class="sign-off">
-      <p>Speak soon.</p>
-      <span class="name">Ad &amp; Fish</span>
-      <span class="details">Test Tube Marketing</span>
-    </div>
-  </div>
-</section>
 
-<footer class="footer">
-  <p>Test Tube Marketing Ltd - Prepared exclusively for Ian Lowes / Autocalls.com</p>
-  <p style="margin-top:6px;"><a href="https://www.testtubemarketing.com">www.testtubemarketing.com</a></p>
-</footer>
+    <h3 class="sub">Where the people come from</h3>
+    <p>Four places the traffic could come from. You'll know better than us which to start with.</p>
+    <ul class="notes traffic">
+      <li><b>Past 10:10 investors</b>You mentioned people who invested through other channels and lost sight of it. They already get it.<span>First check: what contact data exists, and whether we can use it.</span></li>
+      <li><b>Your own audience</b>LinkedIn, press contacts, existing sign-ups. People can look you up.<span>First check: nothing, this can start alongside step 2.</span></li>
+      <li><b>Meta lead ads</b>The quickest way to grow the list from step 3.<span>First check: Meta now wants proof of FCA authorisation for UK financial ads. Until the AR status lands, this would likely run under IDAD's, so it's one for Emily.</span></li>
+      <li><b>Press</b>You've got the history, and a story the UK's been slow to catch on to.<span>First check: which journalists you already know, and a hook worth their time.</span></li>
+    </ul>
+
+    <h3 class="sub">What we'd need from you</h3>
+    <ul class="notes">
+      <li>Your pick of where the traffic comes from</li>
+      <li>Past issue results and maturity dates, for the anniversaries</li>
+      <li>A route through IDAD compliance, and a rough turnaround time</li>
+      <li>Your time on camera when we get to step 4</li>
+    </ul>
+  </section>
+
+  <div class="sign">
+    <h2>What's next<em>.</em></h2>
+    <p>Have a read and pull it apart. Then let's get on a call and agree where we start. If it lands, we'll crack on with step 1 straight away.</p>
+    <div class="names">Ad <span>&amp;</span> Fish</div>
+  </div>
+
+  <footer>Test Tube Marketing. Prepared for Ian Lowes / Autocalls.com.</footer>
+</div>
 
 <script>
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')}),{threshold:.08});
-document.querySelectorAll('.fi').forEach(el=>io.observe(el));
-const secs=document.querySelectorAll('section[id]');
-const dc=document.getElementById('navDots');
-secs.forEach((s,i)=>{const b=document.createElement('button');b.className='dot';b.title=s.dataset.label||'';b.onclick=()=>s.scrollIntoView({behavior:'smooth'});dc.appendChild(b);});
-const dots=dc.querySelectorAll('.dot');
-const no=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting&&x.intersectionRatio>.45){const i=Array.from(secs).indexOf(x.target);dots.forEach((d,j)=>d.classList.toggle('active',i===j));}}),{threshold:.45});
-secs.forEach(s=>no.observe(s));
+document.documentElement.classList.add('js');
+const chat=document.getElementById('chat');
+if('IntersectionObserver' in window){
+  new IntersectionObserver((e,o)=>e.forEach(x=>{if(x.isIntersecting){chat.classList.add('seen');o.disconnect();}}),{threshold:.35}).observe(chat);
+}else{chat.classList.add('seen');}
 </script>
 </body>
 </html>
