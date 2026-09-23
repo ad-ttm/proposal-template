@@ -43,17 +43,30 @@ p{margin-bottom:16px;}
 p:last-child{margin-bottom:0;}
 strong{font-weight:600;}
 
-/* Signature: the conversations */
-.chat{display:flex;flex-direction:column;gap:10px;margin:8px 0 28px;}
-.bubble{align-self:flex-start;max-width:88%;background:var(--bubble);border-radius:22px 22px 22px 6px;padding:14px 20px;font-weight:600;font-size:clamp(20px,4.6vw,26px);line-height:1.3;letter-spacing:-.01em;}
+/* Signature: the conversations, as speech bubbles */
+.chat{display:flex;flex-direction:column;gap:26px;margin:12px 0 34px;}
+.bubble{position:relative;align-self:flex-start;max-width:82%;background:var(--bubble);border-radius:26px;padding:16px 22px;font-weight:600;font-size:clamp(20px,4.6vw,26px);line-height:1.3;letter-spacing:-.01em;}
+.bubble::after{content:'';position:absolute;bottom:-13px;left:30px;width:24px;height:16px;background:inherit;clip-path:polygon(0 0,100% 0,0 100%);}
+.bubble.r{align-self:flex-end;}
+.bubble.r::after{left:auto;right:30px;clip-path:polygon(0 0,100% 0,100% 100%);}
 .bubble.hot{background:var(--pink);color:#fff;}
 .chat-note{font-size:13px;color:var(--muted);margin-top:4px;}
-.js .bubble{opacity:0;transform:translateY(10px) scale(.98);transition:opacity .45s ease,transform .45s ease;}
+.js .bubble{opacity:0;transform:translateY(12px) scale(.96);transition:opacity .45s ease,transform .45s ease;}
 .js .chat.seen .bubble{opacity:1;transform:none;}
-.js .chat.seen .bubble:nth-child(2){transition-delay:.35s;}
-.js .chat.seen .bubble:nth-child(3){transition-delay:.7s;}
-.js .chat.seen .bubble:nth-child(4){transition-delay:1.15s;}
+.js .chat.seen .bubble:nth-child(2){transition-delay:.4s;}
+.js .chat.seen .bubble:nth-child(3){transition-delay:.8s;}
+.js .chat.seen .bubble:nth-child(4){transition-delay:1.3s;}
 @media (prefers-reduced-motion:reduce){.js .bubble{opacity:1;transform:none;transition:none;}}
+
+/* Swipe examples: old-school letter headlines */
+.swipe{margin:22px 0 0;padding:22px 22px 20px;border-radius:16px;background:#F7F7F9;}
+.swipe .src{font-size:13px;color:var(--muted);margin-bottom:10px;}
+.swipe .src a{color:var(--muted);}
+.swipe blockquote{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:clamp(21px,4.4vw,26px);line-height:1.25;color:var(--ink);margin-bottom:12px;}
+.swipe p{font-size:16px;}
+.ours{margin-top:26px;}
+.ours li{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:19px;line-height:1.35;}
+.small{font-size:15px;color:var(--muted);}
 
 /* Notes list */
 .notes{list-style:none;}
@@ -111,9 +124,9 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;font-size:12px;color
     <h2>Here's what the people we've spoken to so far said when being shown the 10:10 Plan<em>.</em></h2>
     <div class="chat" id="chat">
       <div class="bubble">I don't get it.</div>
-      <div class="bubble">Never heard of it.</div>
+      <div class="bubble r">Never heard of it.</div>
       <div class="bubble">Explain it to me in simple terms.</div>
-      <div class="bubble hot">Why has my FA never shown me this if it's good?</div>
+      <div class="bubble r hot">Why has my FA never shown me this if it's good?</div>
     </div>
     <p class="chat-note">Friends of Ad's who already invest. More conversations are on the way.</p>
     <p style="margin-top:24px;">None of them got past "what is this?" They never got as far as deciding whether to put money in.</p>
@@ -173,6 +186,30 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;font-size:12px;color
         </div>
       </li>
     </ol>
+
+
+    <h3 class="sub">Making the video land with retail investors</h3>
+    <p>The video can't just walk people through the product. It needs a story that stops someone in their tracks, the way the old American investment letters did. Like Fish said on Thursday, this is Britain's best kept investment secret, and that's the story. Two letters we keep coming back to:</p>
+
+    <div class="swipe">
+      <div class="src">Agora Financial, the "Apollo" letter. <a href="https://swiped.co/file/apollo-salesletter-agora/" target="_blank" rel="noopener">See it here</a></div>
+      <blockquote>"When mankind landed on the moon in 1969, we unlocked the key to a $3.7 trillion bonanza."</blockquote>
+      <p>It hangs an investment on a moment everyone knows, then promises the hidden story behind it. You can't not read on.</p>
+    </div>
+
+    <div class="swipe">
+      <div class="src">Agora Financial, "Dangerous Lies". <a href="https://swiped.co/file/dangerouslies-agorafinancial/" target="_blank" rel="noopener">See it here</a></div>
+      <blockquote>"The 3 Most Dangerous Retirement Lies Brokers Are Telling Americans Today"</blockquote>
+      <p>It names who's been keeping people in the dark, and puts the writer on the reader's side. That's exactly the question our investors asked: why has my FA never shown me this?</p>
+    </div>
+
+    <p style="margin-top:26px;">Here's the kind of thing that could look like for the 10:10 Plan:</p>
+    <ul class="notes ours">
+      <li>Britain's best kept investment secret</li>
+      <li>The investment the wealthy have used for 20 years, and why your adviser has probably never mentioned it</li>
+      <li>Why investors in France and Germany have done this for years, and the UK is only now catching up</li>
+    </ul>
+    <p class="small">These are starting points to test, not final lines. We'd keep the storytelling and lose the American hype: no promised returns, and everything cleared by IDAD before it goes anywhere.</p>
 
     <h3 class="sub">Where the people come from</h3>
     <p>Four places the traffic could come from. You'll know better than us which to start with.</p>
